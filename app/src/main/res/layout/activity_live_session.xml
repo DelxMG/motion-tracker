@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="@color/background_main">
+
+    <!-- TÍTULO DE LA PANTALLA -->
+    <TextView
+        android:id="@+id/tvSessionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Live session"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary"
+        android:layout_marginBottom="24dp" />
+
+    <!-- ICONO QUE REPRESENTA EL MOVIMIENTO ACTUAL -->
+    <ImageView
+        android:id="@+id/ivMotionIcon"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_standing"
+        app:tint="@color/brand_primary_dark"
+        android:contentDescription="Motion icon" />
+
+    <!-- CRONÓMETRO DE LA SESIÓN -->
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00:00"
+        android:textSize="28sp"
+        android:textColor="@color/text_primary"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- TEXTO CON EL ESTADO ACTUAL DEL MOVIMIENTO -->
+    <TextView
+        android:id="@+id/tvMotionStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ready to start"
+        android:textSize="18sp"
+        android:textColor="@color/text_secondary"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- CONTENEDOR DE BOTONES -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- BOTÓN START / PAUSE -->
+        <Button
+            android:id="@+id/btnStartPause"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Start"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/brand_primary"
+            android:layout_marginEnd="8dp"/>
+
+        <!-- BOTÓN FINISH (OCULTO HASTA INICIAR SESIÓN) -->
+        <Button
+            android:id="@+id/btnEndSession"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Finish"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/brand_primary"
+            android:layout_marginStart="8dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</LinearLayout>

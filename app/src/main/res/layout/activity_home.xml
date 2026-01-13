@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_main"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="32dp">
+
+    <!-- ICONO PRINCIPAL -->
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_heart"
+        app:tint="@color/brand_primary"
+        android:contentDescription="@string/app_name" />
+
+    <!-- NOMBRE DE LA APP -->
+    <TextView
+        android:id="@+id/tvAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/app_name"
+        android:textColor="@color/text_primary"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <!-- SUBTÍTULO -->
+    <TextView
+        android:id="@+id/tvTagline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="@string/tagline"
+        android:textColor="@color/text_secondary"
+        android:textSize="14sp" />
+
+    <!-- CONTENEDOR DE BOTONES PRINCIPALES -->
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- BOTÓN REGISTRO MANUAL -->
+        <Button
+            android:id="@+id/btnOpenActivityLog"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/brand_primary"
+            android:text="@string/register_activity"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+
+        <!-- BOTÓN SESIÓN EN TIEMPO REAL -->
+        <Button
+            android:id="@+id/btnStartLiveSession"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@color/brand_primary"
+            android:text="@string/live_session"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

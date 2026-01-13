@@ -1,0 +1,14 @@
+<resources>
+    <!-- App -->
+    <string name="app_name">Motion</string>
+    <string name="tagline">Track your physical activity</string>
+
+    <!-- Home actions -->
+    <string name="register_activity">Register activity</string>
+    <string name="live_session">Live session</string>
+
+    <!-- Activity log -->
+    <string name="activity_name">Activity name</string>
+    <string name="activity_duration">Duration (minutes)</string>
+    <string name="save_activity">Save activity</string>
+</resources>
