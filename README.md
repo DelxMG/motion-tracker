@@ -62,6 +62,7 @@ The app provides a simple and clean interface to register sessions and visualize
     </td>
   </tr>
 </table>
+
 ## How to Run
 
 1. Clone the repository:
