@@ -38,8 +38,30 @@ The app provides a simple and clean interface to register sessions and visualize
 - Intents & navigation between Activities  
 - XML-based UI layouts
 
+## App Preview
 
-
+<table align="center" style="border-collapse: collapse; border: none;">
+  <tr>
+    <td align="center" style="border: none;">
+      <img src="mockups/home.png" width="260"/><br/>
+      <b>Home</b>
+    </td>
+    <td align="center" style="border: none;">
+      <img src="mockups/manual_log.png" width="260"/><br/>
+      <b>Manual activity log</b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" style="border: none;">
+      <img src="mockups/live_session.png" width="260"/><br/>
+      <b>Live session</b>
+    </td>
+    <td align="center" style="border: none;">
+      <img src="mockups/session_summary.png" width="260"/><br/>
+      <b>Session summary</b>
+    </td>
+  </tr>
+</table>
 ## How to Run
 
 1. Clone the repository:
